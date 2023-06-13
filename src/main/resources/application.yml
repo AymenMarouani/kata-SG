@@ -1,0 +1,5 @@
+version: v1
+
+server:
+  servlet:
+    context-path: /bank-service/api/${version}
