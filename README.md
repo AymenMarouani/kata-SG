@@ -37,10 +37,10 @@ I want to see the history (operation, date, amount, balance) of my operations
 
 Exposed REST API with the following endpoints
 
-| feature       | verb | url                   | request body                     | response                                                                                                                                     |
-|---------------|------|-----------------------|----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Save/Withdraw | POST | /accounts/{accountId} | { "amount": 10, "type": "SAVE" } | {"result":"SUCCESSFUL","message":"Amount of 10$ successfully deposited in your account","balance":29}                                        |
-| Retrieve      | GET  | /accounts/{accountId} | NA                               | {"operations":[{"type":"SAVE","amount":10,"balance":10,"date":"2023-06-12"},{"type":"WITHDRAW","amount":1,"balance":9,"date":"2023-06-14"}]} |
+| feature       | verb | url                   | request body                     | response                                                                                                                                      |
+|---------------|------|-----------------------|----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| Save/Withdraw | POST | /accounts/{accountId} | { "amount": 10, "type": "SAVE" } | {"result":"SUCCESSFUL","message":"Amount of 10$ successfully deposited in your account","balance":29}                                         |
+| Retrieve      | GET  | /accounts/{accountId} | NA                               | {"operations":\[{"type":"SAVE","amount":10,"balance":10,"date":"2023-06-12"},{"type":"WITHDRAW","amount":1,"balance":9,"date":"2023-06-14"}]} |
 
 ### Examples
 
